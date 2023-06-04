@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aplicativo de Eventos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container">
+                <div class="row" style="width: 100%;">
+                    <div class="col-9">
+                        <a class="navbar-brand" href="#"><i class="fas fa-user"></i> &nbsp; Bienvenido Julio Americo</a>
+                    </div>
+                    <div class="col-2">
+                        <a class="btn btn-primary btn-sm w-100" href="crearEvento.html"><i class="fas fa-plus"></i> &nbsp; Crear Evento</a>
+                    </div>
+                    <div class="col-1">
+                        <a class="btn btn-success btn-sm w-100" href="login.html"><i class="fas fa-sign-out-alt"></i> &nbsp; Salir</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h1>Eventos</h1>
+        <br>
+        <div class="form-floating">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Todo</option>
+                <option value="1">Activos</option>
+                <option value="2">Cancelados</option>
+                <option value="3">Pasados</option>
+            </select>
+            <label for="floatingSelect">Filtrar</label>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between  mb-3">
+                            <h5 class="card-title m-0">Concierto de Rock</h5>
+                            <div>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                                <a href="actualizarEvento.html" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
+                            </div>
+                        </div>
+                        <p class="card-text mb-1">Disfruta de una noche llena de música y energía con las mejores bandas
+                            de rock de la ciudad.</p>
+                        <p class="card-text mb-1"><strong>Fecha:</strong> 2023-07-20</p>
+                        <p class="card-text mb-1"><strong>Ubicación:</strong> Estadio XYZ</p>
+                        <span class="badge text-bg-success w-100">Activo</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5 class="card-title m-0">Exposición de Arte Moderno</h5>
+                            <div>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
+                            </div>
+                        </div>
+                        <p class="card-text mb-1">Descubre las obras de los artistas más innovadores del momento en esta
+                            impresionante exposición de arte moderno.</p>
+                        <p class="card-text mb-1"><strong>Fecha:</strong> 2023-08-05</p>
+                        <p class="card-text mb-1"><strong>Ubicación:</strong> Galería ABC</p>
+                        <span class="badge text-bg-danger w-100">Cancelado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5 class="card-title m-0">Conferencia de Tecnología</h5>
+                            <div>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
+                            </div>
+                        </div>
+                        <p class="card-text mb-1">Aprende sobre las últimas tendencias tecnológicas y descubre cómo
+                            aplicarlas en tu negocio en esta conferencia imperdible.</p>
+                        <p class="card-text mb-1"><strong>Fecha:</strong> 2023-09-15</p>
+                        <p class="card-text mb-1"><strong>Ubicación:</strong> Centro de Convenciones XYZ</p>
+                        <span class="badge text-bg-secondary w-100">Pasado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5 class="card-title m-0">Exposición de Fotografía</h5>
+                            <div>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
+                            </div>
+                        </div>
+                        <p class="card-text mb-1">Explora el mundo a través de las imágenes capturadas por talentosos
+                            fotógrafos en esta emocionante exposición de fotografía.</p>
+                        <p class="card-text mb-1"><strong>Fecha:</strong> 2023-11-02</p>
+                        <p class="card-text mb-1"><strong>Ubicación:</strong> Galería de Arte Moderno</p>
+                        <span class="badge text-bg-secondary w-100">Pasado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5 class="card-title m-0">Concierto de Música Clásica</h5>
+                            <div>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
+                            </div>
+                        </div>
+                        <p class="card-text mb-1">Disfruta de una noche elegante y emotiva con las melodías atemporales
+                            interpretadas por una orquesta sinfónica en este concierto de música clásica.</p>
+                        <p class="card-text mb-1"><strong>Fecha:</strong> 2023-11-12</p>
+                        <p class="card-text mb-1"><strong>Ubicación:</strong> Teatro Nacional</p>
+                        <span class="badge text-bg-success w-100">Activo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5 class="card-title m-0">Festival de Comida Internacional</h5>
+                            <div>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
+                            </div>
+                        </div>
+                        <p class="card-text mb-1">Descubre una variedad de sabores y platos de diferentes culturas en
+                            este festival gastronómico que celebra la comida internacional.</p>
+                        <p class="card-text mb-1"><strong>Fecha:</strong> 2023-09-20</p>
+                        <p class="card-text mb-1"><strong>Ubicación:</strong> Parque Central</p>
+                        <span class="badge text-bg-secondary w-100">Pasado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5 class="card-title m-0">Feria de Libros</h5>
+                            <div>
+                                <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                                <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-pen"></i></a>
+                            </div>
+                        </div>
+                        <p class="card-text mb-1">Explora una amplia selección de libros de diferentes géneros y autores reconocidos en esta emocionante feria de libros.</p>
+                        <p class="card-text mb-1"><strong>Fecha:</strong> 2023-08-10</p>
+                        <p class="card-text mb-1"><strong>Ubicación:</strong> Centro de Convenciones XYZ</p>
+                        <span class="badge text-bg-danger w-100">Cancelado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-light text-center py-3">
+        <p>Aplicativo de Reserva de Eventos &copy; 2023</p>
+    </footer>
+</body>
+
+</html>
